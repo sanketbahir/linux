@@ -1,0 +1,36 @@
+> awk is scripting language use for manipulating data  and genrating  reportes
+> 1) scan file one by one 2) splits each  inpute  line into fileds 3) compres input lines/ fileds to pattern 3) performs matched lines(s) on matched lines 
+> 
+> 2)useful for => 1) ttarnsform data files 2) produce formate reports
+> 
+> 3)programming constructs =>
+> 1) formate output lines 2) arathmatic and string oprations 3) condationals and loops
+> 
+> .syntax
+> 
+> awk options 'select_critearia {action}' inpute -file > output_file
+> option:
+> -f program-file : Reads the awk program soures form the line  program-file,insted of from file first command line argument.
+> -f fs : use fs for input filed separator 
+> Example:
+> awk '{print}' staff.txt => it will print all file data
+> awk  '/manager/  {print}' staff.txt => it will print those who has  post manager 
+> awk '{print ,}' staff.txt => we use this conmmand to  print the column of file
+> awk '{print ,}' staff.txt =>  command print the last column of the file 
+> awk 'NR==3, NR==6  {print NR,bash}' staff.txt =>  using NR command like this we can print the rows of file
+
+awk '{print NR "- " $1}' classes.txt
+this command will print the column name with the column data
+
+awk '{ if (length($0) > max) max  = length($0)} END  {print max}' classes.txt
+this command will  print the logest  line that is present in our file
+
+awk 'END {print NR }' classes.txt
+this command will  tell  as  about how many rows of data in our file
+
+awk 'length($0) > 10' classes.txt
+this cmd will print those lines who has more than 10 character
+
+user@user-ThinkPad-E470:~$ 
+
+

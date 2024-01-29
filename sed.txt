@@ -1,0 +1,23 @@
+1) sed 's/Linux/inix/' sed.txt
+. it  will replace the word linux to inix 
+
+2) sed 's/Linux/inix/i' sed.txt
+. with the healp of i we can replace the both like Linux/linux 
+
+Key Point is with the healp of the s inside the string we can  see the changes. but when want to  commit the changes then we have  to  put -i just after sed -i 's/Linux/unix/i' sed.txt
+
+3) sed -i's/^\(unix\)$/#\1/1' sed.txt
+using this we can comment out particular word
+
+4) sed -i's/^unix/#&/' sed.txt
+.using this wen can comment out those word which are starting  with unix
+
+5) sed '5 s/LInux/unix/' example.txt
+in this command we  are try to replace Linux in line number 5 with the unix
+
+6) sed 's/ubantu/\u&/' sed.txt
+.using this  command we can change the letter in smaller case  into upper case
+
+7) sed 's/https:\/\//www./' sed.txt
+here we replace  the https: into www.
+ 

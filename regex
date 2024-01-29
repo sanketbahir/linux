@@ -1,0 +1,20 @@
+it is use to pattern maching or string matching
+^:-cat filename | grep ^a => it  will find the letters those start with a
+$:-cat filename | grep a$ => it  will find the letters those ends with a
+
+*:-cat filename | grep ab*c => it  is use to find 0 or  more accurens   
+\d : represent to ant degit we  use this cmd for \d{10}  find number
+|: this is or oprator  we can  use like [200~grep 'pattern1\|pattern2' filename
+(): used to group multiple related expressions together like grep '\(abc\|def\)xyz' filename
+
+\:- used as an escape character before other special characters
+*: used as a wildcard for zero or more occurrence(s)
+ like grep 'book*' example.txt bookstore, bookcopy,booking
+g:- standes for globle searching like \sanket\g it will search globle
+gi:- standes for case insensitive  globle searching like \sanket\gi it will search globle
+\w:- \w stands for word  example \w{4,6} it will search for  those words 4 or 6 character
+?: it,s use for optional example welcome? the e is optional here 
+.: .../. it means any character any character
+\b:for border
+\s:for white space
+
